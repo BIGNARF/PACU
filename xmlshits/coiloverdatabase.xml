@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<ArrayOfCoilOverProfile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CoilOverProfile>
+    <name>test</name>
+    <hideFlags>None</hideFlags>
+    <profilename>lol1</profilename>
+    <stiffness>50</stiffness>
+    <Maxlenght>50</Maxlenght>
+    <Minlenght>50</Minlenght>
+    <damp>50</damp>
+  </CoilOverProfile>
+  <CoilOverProfile>
+    <name>coilover</name>
+    <hideFlags>None</hideFlags>
+    <profilename>coilover</profilename>
+    <stiffness>10</stiffness>
+    <Maxlenght>10</Maxlenght>
+    <Minlenght>10</Minlenght>
+    <damp>10</damp>
+  </CoilOverProfile>
+  <CoilOverProfile>
+    <name>Coilovercreate</name>
+    <hideFlags>None</hideFlags>
+    <profilename />
+    <stiffness>0</stiffness>
+    <Maxlenght>0</Maxlenght>
+    <Minlenght>0</Minlenght>
+    <damp>0</damp>
+  </CoilOverProfile>
+</ArrayOfCoilOverProfile>
