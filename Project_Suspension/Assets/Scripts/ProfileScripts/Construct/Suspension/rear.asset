@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 673aa339f2653334e83b04944a10faa2, type: 3}
+  m_Name: rear
+  m_EditorClassIdentifier: 
+  SteeringBar:
+    outerpoint: {x: 11, y: 0, z: 0}
+    innerpoint: {x: 11, y: 11, z: 0}
+  Upper:
+    outerpoint: {x: 0, y: 0, z: 0}
+    innerpoint: {x: 11, y: 11, z: 0}
+    forepoint: {x: 1, y: 1, z: 1}
+    aftpoint: {x: 1, y: 1, z: 0}
+  Lower:
+    outerpoint: {x: 100, y: 100, z: 100}
+    innerpoint: {x: 0, y: 11, z: 110}
+    forepoint: {x: 11, y: 0, z: 1}
+    aftpoint: {x: 111, y: 111, z: 0}
+  wheel:
+    Contactpatch: {x: 0, y: 0, z: 0}
+    WheelCenter: {x: 0, y: 0, z: 0}
+    UprightCenter: {x: 0, y: 0, z: 0}
+  RC: {x: 0, y: 0}

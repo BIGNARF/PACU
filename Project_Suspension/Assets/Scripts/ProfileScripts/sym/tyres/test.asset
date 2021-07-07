@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a970d98e123dce743a516a625b11d5e6, type: 3}
+  m_Name: test
+  m_EditorClassIdentifier: 
+  profilename: lol2
+  stiffness: 50
+  FNOM: 10
+  PCY1: 50
+  PDY1: 10
+  PDY2: 10
+  PDY3: 10
+  PEY1: 10
+  PEY2: 10
+  PEY3: 10
+  PEY4: 69
+  PKY1: 69
+  PKY2: 69
+  PKY3: 69
+  PHY1: 69
+  PHY2: 10
+  PHY3: 10
+  PVY1: 10
+  PVY2: 10
+  PVY3: 10
+  PVY4: 10
