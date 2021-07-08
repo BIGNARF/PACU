@@ -27,7 +27,7 @@ public class VectorInput : MonoBehaviour
         Type type = target.GetType().GetField(structname).GetValue(target).GetType();
         var temp=Convert.ChangeType(target.GetType().GetField(structname).GetValue(target),type);
         temp.GetType().GetField(VarName).SetValue(temp, Value);
-        }
+        }//UPDATES TARGET VALUE INSIDE SCRIPTABLE OBJECT
 
     public void VectorDisplay()
     {
@@ -38,7 +38,7 @@ public class VectorInput : MonoBehaviour
         x.text = string.Format("{0:N2}", value.x);
         y.text = string.Format("{0:N2}", value.y);
         z.text = string.Format("{0:N2}", value.z);
-    }
+    }//GETS VALUE FROM SCRIPTABLE OBJECT AND REFRESHES DISPLAY
 
     public void ChangeTarget(ScriptableObject newtarget)
     {

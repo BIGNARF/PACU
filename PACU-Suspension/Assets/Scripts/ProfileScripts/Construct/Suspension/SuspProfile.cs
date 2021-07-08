@@ -160,7 +160,7 @@ public class SuspProfile : ScriptableObject
         var Camber_r = Mathf.Deg2Rad * Camber;
         var a = (wheel.Contactpatch-wheel.WheelCenter).magnitude;
         wheel.WheelCenter.x = wheel.Contactpatch.x + a * Mathf.Sin(Camber_r);
-        wheel.WheelCenter.x = wheel.Contactpatch.x + a * Mathf.Cos(Camber_r);
+        wheel.WheelCenter.y = wheel.Contactpatch.y + a * Mathf.Cos(Camber_r);
     }
 
     public void SetByCaster(float Caster)
@@ -184,5 +184,5 @@ public class SuspProfile : ScriptableObject
         Upper.outerpoint.y += a;
         Lower.outerpoint.y += a;
     }
-    #endregion
+    #endregion //NOTE: ONE OF THESE IS FUCKED, I dont know which tho
 }
