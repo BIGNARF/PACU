@@ -26,7 +26,7 @@ public class GeneralProfile : ScriptableObject
     {
         //var databuffer = new SymulationProfile();
         XmlSerializer serializer = new XmlSerializer(typeof(GeneralProfile));
-        FileStream stream = new FileStream(Application.persistentDataPath + "/" + FileName + ".xml", FileMode.Open);
+        FileStream stream = new FileStream(Application.dataPath + "/databases/" + FileName + ".xml", FileMode.Open);
         var databuffer = serializer.Deserialize(stream) as GeneralProfile;
         stream.Close();
         this.Clone(databuffer);
@@ -36,7 +36,7 @@ public class GeneralProfile : ScriptableObject
     {
         //Debug.Log(Application.persistentDataPath);
         XmlSerializer serializer = new XmlSerializer(typeof(GeneralProfile));
-        FileStream stream = new FileStream(Application.persistentDataPath + "/" + FileName + ".xml", FileMode.Create);
+        FileStream stream = new FileStream(Application.dataPath + "/databases/" + FileName + ".xml", FileMode.Create);
         serializer.Serialize(stream, this);
         stream.Close();
     }
@@ -47,4 +47,4 @@ public class GeneralProfile : ScriptableObject
         construct.Clone(target.construct);// this one needs work
     }
     #endregion
-}
+}//GENERAL SYSTEM WIDE PROFILE. IS SAVED TO PERMANENT STORAGE (xlm)

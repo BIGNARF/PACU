@@ -109,26 +109,26 @@ public class tyreprofile : dataprofile // Contains MF coefs and methods for calc
         string FileName="tyredatabase";
         var databuffer = new List<tyreprofile>();
         XmlSerializer serializer = new XmlSerializer(typeof(List<tyreprofile>));
-        FileStream stream = new FileStream(Application.persistentDataPath + "/" + FileName + ".xml", FileMode.OpenOrCreate);
+        FileStream stream = new FileStream(Application.dataPath + "/databases/" + FileName + ".xml", FileMode.OpenOrCreate);
         databuffer = serializer.Deserialize(stream) as List<tyreprofile>;
         databuffer.Add(this);
         stream.Close();
-        stream = new FileStream(Application.persistentDataPath + "/" + FileName + ".xml", FileMode.Create);
+        stream = new FileStream(Application.dataPath + "/databases/" + FileName + ".xml", FileMode.Create);
         serializer.Serialize(stream, databuffer);
         stream.Close();
     }//saves current profile to tyrelist xml file
 
     private void Savename()
     {
-       Debug.Log(Application.persistentDataPath);
+       //Debug.Log(Application.persistentDataPath);
         string FileName = "tyrelist";
         var databuffer = new List<string>();
         XmlSerializer serializer = new XmlSerializer(typeof(List<string>));
-        FileStream stream = new FileStream(Application.persistentDataPath + "/" + FileName + ".xml", FileMode.OpenOrCreate);
+        FileStream stream = new FileStream(Application.dataPath + "/databases/" + FileName + ".xml", FileMode.OpenOrCreate);
         databuffer = serializer.Deserialize(stream) as List<string>;
         databuffer.Add(this.profilename);
         stream.Close();
-        stream = new FileStream(Application.persistentDataPath + "/" + FileName + ".xml", FileMode.Create);
+        stream = new FileStream(Application.dataPath + "/databases/" + FileName + ".xml", FileMode.Create);
         serializer.Serialize(stream, databuffer);
         stream.Close();
     }//saves tyrename to tyre namelist for research later
@@ -140,7 +140,7 @@ public class tyreprofile : dataprofile // Contains MF coefs and methods for calc
         string FileName = "tyredatabase";
         var databuffer = new List<tyreprofile>();
         XmlSerializer serializer = new XmlSerializer(typeof(List<tyreprofile>));
-        FileStream stream = new FileStream(Application.persistentDataPath + "/" + FileName + ".xml", FileMode.Open);
+        FileStream stream = new FileStream(Application.dataPath + "/databases/" + FileName + ".xml", FileMode.Open);
         databuffer = serializer.Deserialize(stream) as List<tyreprofile>;
         stream.Close();
         var result =databuffer.Find(x => x.profilename.Equals(name));

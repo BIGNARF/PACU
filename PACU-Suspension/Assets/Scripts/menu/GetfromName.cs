@@ -25,7 +25,7 @@ public class GetfromName : MonoBehaviour
     {
         //string FileName = "tyrelist";
         XmlSerializer serializer = new XmlSerializer(typeof(List<string>));
-        FileStream stream = new FileStream(Application.persistentDataPath + "/" + FileName + ".xml", FileMode.OpenOrCreate);
+        FileStream stream = new FileStream(Application.dataPath + "/databases/" + FileName + ".xml", FileMode.OpenOrCreate);
         options = serializer.Deserialize(stream) as List<string>;
         stream.Close();
     }

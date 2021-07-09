@@ -2,17 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu]
+
 public class Simulation_Output : ScriptableObject
 {
-    public List<Vector2> Speedxacc;
+
+
+    public List<datapoint> data= new List<datapoint>();
 
     public void ClearData()
     {
-        Speedxacc.Clear();
+        data.Clear();
     }//resets stored data points
-    public void GetData(float Speed, float acc)
+    public void GetData(datapoint current)
     {
-        Speedxacc.Add(new Vector2(Speed, acc));
+        data.Add(current);
+        var i = data.Count - 1;
     }
 }
+
+

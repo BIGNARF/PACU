@@ -22,18 +22,27 @@ public class carcontroller2 : MonoBehaviour
     //public float Speed; // in m/s
     public float Yaw_angle; // in deg, positive in CCW direction from top view
     public float Yaw_moment; // in N.m
+    public float SI, SM; // Manouvrability parameters
+    public Simulation_Output graph;
     #endregion
 
     #region internal/ setup stuff
     public axel2 front, rear;   
     public Rigidbody body;
-    public Simulation_Output graph;
+
 
     private Vector3 prev_speed;//speed vector for acc calc
+    private float prev_yaw;
+    private float prev_ay;
+    private float prev_steer;//memories for derivative calcs
     void Start()
     {
         Acceleration = Vector3.zero;
         prev_speed = Vector3.zero;
+        prev_yaw = 0;
+        prev_ay = 0;
+        Command.steer_angle = 0;
+        prev_steer = 0;
         Yaw_angle = 0;
         Yaw_moment = 0;
         SetRB();
@@ -79,7 +88,10 @@ public class carcontroller2 : MonoBehaviour
 
 
         // output data stuff
-        graph.GetData(body.velocity.magnitude, Acceleration.magnitude);
+        CalcParameters();
+        datapoint point = new datapoint(body.velocity.magnitude, Acceleration.z, Acceleration.x, Command.steer_angle, Yaw_angle, SI);
+        Debug.Log(point.SI);
+        graph.GetData(point);
     }
 
     private void YAWmanager()
@@ -105,9 +117,40 @@ public class carcontroller2 : MonoBehaviour
     {
         var acc = (body.velocity - prev_speed) / Time.fixedDeltaTime;
         prev_speed = body.velocity;
-        //Debug.Log(acc);
+
         Acceleration = gameObject.transform.InverseTransformDirection(acc);//acceleration vector in local coordinates
         Yaw_angle = Vector3.SignedAngle(gameObject.transform.forward, body.velocity, gameObject.transform.up);
-        //Debug.Log(Yaw_angle);
+        
+    }
+
+    private void CalcParameters()
+    {
+        var day = Acceleration.x - prev_ay;
+        prev_ay = Acceleration.x;
+        var dyaw = Yaw_moment - prev_yaw;
+        prev_yaw = Yaw_moment;
+        var dsteer = Command.steer_angle - prev_steer;
+        prev_steer = Command.steer_angle;
+        //var dt = Time.fixedDeltaTime;
+        if (Mathf.Abs(dyaw) < 0.01)
+        { SI = 0; }
+            else
+        { SI = (day / dyaw) / (profile.Mass * profile.wheelbase); }
+    }
+}
+
+public class datapoint
+{
+    public float v, ax, ay, theta, beta, beta_d, SI;//, SM;
+
+    public datapoint(float _v, float _ax, float _ay, float _theta, float _beta, float _SI)//, float _SM)
+    {
+        v = _v;
+        ax = _ax;
+        ay = _ay;
+        theta = _theta;
+        beta = _beta;
+        SI = _SI;
+        // SM = _SM;
     }
 }

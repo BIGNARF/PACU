@@ -7,8 +7,8 @@ public class Simulation_Input : ScriptableObject
 {
     public float motor_force; 
 
-    [SerializeField]
-    private float steer_angle;// in deg
+
+    public float steer_angle;// in deg
     [SerializeField]
     private float acc_force, brake_force;// in N
     public float GetSteerInput()
