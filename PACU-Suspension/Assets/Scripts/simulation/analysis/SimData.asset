@@ -12,4 +12,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 791cf12293b888b459327df7fa3adb3e, type: 3}
   m_Name: SimData
   m_EditorClassIdentifier: 
-  Speedxacc: []
+  data:
+  - v: 1
+    ax: 0
+    ay: 0
+    theta: 0
+    beta: 0
+    beta_d: 0
+    SI: 1
+  - v: 2
+    ax: 0
+    ay: 0
+    theta: 0
+    beta: 90
+    beta_d: 0
+    SI: 2
+  - v: 4
+    ax: -0.00013324153
+    ay: 20.728197
+    theta: 0
+    beta: 90.00003
+    beta_d: 0
+    SI: 4
+  - v: 6
+    ax: 0.00011529634
+    ay: -10.019382
+    theta: 0
+    beta: -89.9997
+    beta_d: 0
+    SI: 1.3
+  - v: 9
+    ax: 0.00010225829
+    ay: -10.0300865
+    theta: 0
+    beta: 89.99988
+    beta_d: 0
+    SI: 9

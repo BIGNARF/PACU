@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: StandardInput
   m_EditorClassIdentifier: 
   motor_force: 10000
-  steer_angle: 43
+  steer_angle: 0
   acc_force: 0
   brake_force: 0

@@ -90,8 +90,8 @@ public class carcontroller2 : MonoBehaviour
         // output data stuff
         CalcParameters();
         datapoint point = new datapoint(body.velocity.magnitude, Acceleration.z, Acceleration.x, Command.steer_angle, Yaw_angle, SI);
-        Debug.Log(point.SI);
         graph.GetData(point);
+        Debug.Log("   v2:" + graph.data[(graph.data.Count)-1].v);
     }
 
     private void YAWmanager()
@@ -137,20 +137,6 @@ public class carcontroller2 : MonoBehaviour
             else
         { SI = (day / dyaw) / (profile.Mass * profile.wheelbase); }
     }
+
 }
 
-public class datapoint
-{
-    public float v, ax, ay, theta, beta, beta_d, SI;//, SM;
-
-    public datapoint(float _v, float _ax, float _ay, float _theta, float _beta, float _SI)//, float _SM)
-    {
-        v = _v;
-        ax = _ax;
-        ay = _ay;
-        theta = _theta;
-        beta = _beta;
-        SI = _SI;
-        // SM = _SM;
-    }
-}
