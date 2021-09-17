@@ -22,8 +22,8 @@ public class UILineRenderer : Graphic
         float width = rectTransform.rect.width;
         float height = rectTransform.rect.height;
 
-        unitwidth = width / (float)gridSize.x;
-        unitheight = height / (float)gridSize.y;
+        unitwidth = 1;// width / (float)gridSize.x;
+        unitheight = 1; //height / (float)gridSize.y;
        // int count = 0;
 
         if(points.Count<2)

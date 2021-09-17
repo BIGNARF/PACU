@@ -77,4 +77,4 @@ public class UIGridRenderer : Graphic
         vh.AddTriangle(offset + 3, offset + 0, offset + 4);
         vh.AddTriangle(offset + 4, offset + 7, offset + 3);
     }
-}
+}//GRID IS INACTIVE CURRENTLY, PERHAPS IT COULD BE USED FOR BETTER LOOKING DISPLAY IN THE FUTURE

@@ -395,12 +395,12 @@ PrefabInstance:
     - target: {fileID: 723776948843890148, guid: bcbc1871acc4a0b4cb69ee27a4a6403a,
         type: 3}
       propertyPath: gridSize.x
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 723776948843890148, guid: bcbc1871acc4a0b4cb69ee27a4a6403a,
         type: 3}
       propertyPath: gridSize.y
-      value: 21
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 723776949019715561, guid: bcbc1871acc4a0b4cb69ee27a4a6403a,
         type: 3}
@@ -548,3 +548,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raw: {fileID: 11400000, guid: 578016e754827e44fb7ca89fc25b2c07, type: 2}
+  ymax: {fileID: 723776947913686701}
+  ymin: {fileID: 723776947913686700}
+  xmax: {fileID: 723776947913686699}
+--- !u!114 &723776947913686699 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4206359038201274947, guid: bcbc1871acc4a0b4cb69ee27a4a6403a,
+    type: 3}
+  m_PrefabInstance: {fileID: 723776947913686696}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &723776947913686700 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4783762261957862936, guid: bcbc1871acc4a0b4cb69ee27a4a6403a,
+    type: 3}
+  m_PrefabInstance: {fileID: 723776947913686696}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &723776947913686701 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3623568601621845228, guid: bcbc1871acc4a0b4cb69ee27a4a6403a,
+    type: 3}
+  m_PrefabInstance: {fileID: 723776947913686696}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
