@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<GeneralProfile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <name>general</name>
+  <hideFlags>None</hideFlags>
+  <profilename>cuck</profilename>
+  <construct>
+    <name>profile</name>
+    <hideFlags>None</hideFlags>
+    <tyre>
+      <name>standardtyre</name>
+      <hideFlags>None</hideFlags>
+      <profilename>cock and ball</profilename>
+      <stiffness>0</stiffness>
+      <FNOM>2378.134</FNOM>
+      <PCY1>11</PCY1>
+      <PDY1>-1.136865</PDY1>
+      <PDY2>0.468901</PDY2>
+      <PDY3>-5.273733</PDY3>
+      <PEY1>555</PEY1>
+      <PEY2>11</PEY2>
+      <PEY3>-0.228397</PEY3>
+      <PEY4>11</PEY4>
+      <PKY1>11</PKY1>
+      <PKY2>11</PKY2>
+      <PKY3>11</PKY3>
+      <PHY1>0.0045202</PHY1>
+      <PHY2>-0.0007918</PHY2>
+      <PHY3>0.0438</PHY3>
+      <PVY1>11</PVY1>
+      <PVY2>11</PVY2>
+      <PVY3>11</PVY3>
+      <PVY4>11</PVY4>
+    </tyre>
+  </construct>
+</GeneralProfile>

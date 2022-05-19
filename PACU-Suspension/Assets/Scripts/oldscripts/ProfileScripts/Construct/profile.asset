@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef97062dbe512814baba0052d4c9b849, type: 3}
+  m_Name: profile
+  m_EditorClassIdentifier: 
+  tyre: {fileID: 11400000, guid: d372bd74340d8db48aeb470b4db4f66c, type: 2}
+  front: {fileID: 11400000, guid: 2ce3960359502a8439087521f40c0f9e, type: 2}
+  rear: {fileID: 11400000, guid: 6c97564a65eb3a24a8c64c79adcce956, type: 2}

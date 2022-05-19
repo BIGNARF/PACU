@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DynamicVehicle.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/suspension.unity
+    guid: 1946e456b10b9e448aeae7e8c0c31bb3
   m_configObjects: {}

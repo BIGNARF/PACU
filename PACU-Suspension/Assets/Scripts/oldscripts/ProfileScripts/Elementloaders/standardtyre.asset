@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a970d98e123dce743a516a625b11d5e6, type: 3}
+  m_Name: standardtyre
+  m_EditorClassIdentifier: 
+  profilename: teste
+  stiffness: 0
+  FNOM: 0
+  PCY1: 0
+  PDY1: 0
+  PDY2: 0
+  PDY3: 0
+  PEY1: 0
+  PEY2: 11
+  PEY3: 0
+  PEY4: 11
+  PKY1: 0
+  PKY2: 0
+  PKY3: 11
+  PHY1: 0
+  PHY2: -0.0007918
+  PHY3: 0
+  PVY1: 11
+  PVY2: 0
+  PVY3: 0
+  PVY4: 11

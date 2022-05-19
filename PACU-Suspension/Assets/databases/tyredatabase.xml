@@ -1,59 +1,9 @@
 <?xml version="1.0"?>
 <ArrayOfTyreprofile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <tyreprofile>
-    <name>test</name>
-    <hideFlags>None</hideFlags>
-    <profilename>lol1</profilename>
-    <stiffness>50</stiffness>
-    <FNOM>10</FNOM>
-    <PCY1>50</PCY1>
-    <PDY1>10</PDY1>
-    <PDY2>10</PDY2>
-    <PDY3>10</PDY3>
-    <PEY1>10</PEY1>
-    <PEY2>10</PEY2>
-    <PEY3>10</PEY3>
-    <PEY4>10</PEY4>
-    <PKY1>10</PKY1>
-    <PKY2>10</PKY2>
-    <PKY3>10</PKY3>
-    <PHY1>10</PHY1>
-    <PHY2>10</PHY2>
-    <PHY3>10</PHY3>
-    <PVY1>10</PVY1>
-    <PVY2>10</PVY2>
-    <PVY3>10</PVY3>
-    <PVY4>10</PVY4>
-  </tyreprofile>
-  <tyreprofile>
-    <name>test</name>
-    <hideFlags>None</hideFlags>
-    <profilename>lol2</profilename>
-    <stiffness>50</stiffness>
-    <FNOM>10</FNOM>
-    <PCY1>50</PCY1>
-    <PDY1>10</PDY1>
-    <PDY2>10</PDY2>
-    <PDY3>10</PDY3>
-    <PEY1>10</PEY1>
-    <PEY2>10</PEY2>
-    <PEY3>10</PEY3>
-    <PEY4>69</PEY4>
-    <PKY1>69</PKY1>
-    <PKY2>69</PKY2>
-    <PKY3>69</PKY3>
-    <PHY1>69</PHY1>
-    <PHY2>10</PHY2>
-    <PHY3>10</PHY3>
-    <PVY1>10</PVY1>
-    <PVY2>10</PVY2>
-    <PVY3>10</PVY3>
-    <PVY4>10</PVY4>
-  </tyreprofile>
-  <tyreprofile>
     <name>standardtyre</name>
     <hideFlags>None</hideFlags>
-    <profilename>cock</profilename>
+    <profilename>STANDARD</profilename>
     <stiffness>0</stiffness>
     <FNOM>2378.134</FNOM>
     <PCY1>0.953917</PCY1>
@@ -74,5 +24,55 @@
     <PVY2>-0.1655041</PVY2>
     <PVY3>-0.0526262</PVY3>
     <PVY4>-0.8147694</PVY4>
+  </tyreprofile>
+  <tyreprofile>
+    <name>standardtyre</name>
+    <hideFlags>None</hideFlags>
+    <profilename>cock and ball</profilename>
+    <stiffness>0</stiffness>
+    <FNOM>2378.134</FNOM>
+    <PCY1>11</PCY1>
+    <PDY1>-1.136865</PDY1>
+    <PDY2>0.468901</PDY2>
+    <PDY3>-5.273733</PDY3>
+    <PEY1>555</PEY1>
+    <PEY2>11</PEY2>
+    <PEY3>-0.228397</PEY3>
+    <PEY4>11</PEY4>
+    <PKY1>11</PKY1>
+    <PKY2>11</PKY2>
+    <PKY3>11</PKY3>
+    <PHY1>0.0045202</PHY1>
+    <PHY2>-0.0007918</PHY2>
+    <PHY3>0.0438</PHY3>
+    <PVY1>11</PVY1>
+    <PVY2>11</PVY2>
+    <PVY3>11</PVY3>
+    <PVY4>11</PVY4>
+  </tyreprofile>
+  <tyreprofile>
+    <name>standardtyre</name>
+    <hideFlags>None</hideFlags>
+    <profilename>teste</profilename>
+    <stiffness>0</stiffness>
+    <FNOM>0</FNOM>
+    <PCY1>0</PCY1>
+    <PDY1>0</PDY1>
+    <PDY2>0</PDY2>
+    <PDY3>0</PDY3>
+    <PEY1>0</PEY1>
+    <PEY2>11</PEY2>
+    <PEY3>0</PEY3>
+    <PEY4>11</PEY4>
+    <PKY1>0</PKY1>
+    <PKY2>0</PKY2>
+    <PKY3>11</PKY3>
+    <PHY1>0</PHY1>
+    <PHY2>-0.0007918</PHY2>
+    <PHY3>0</PHY3>
+    <PVY1>11</PVY1>
+    <PVY2>0</PVY2>
+    <PVY3>0</PVY3>
+    <PVY4>11</PVY4>
   </tyreprofile>
 </ArrayOfTyreprofile>
